@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>(Pie)thon - As melhores tortas do Brasil!</title>
+</head>
+<body>
+    <!--HEADER-->
+    <header class="w-full h-105 bg-pink-400 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/piethon-logo.png" 
+            alt="Logo Piethon" 
+            class="w-32 h-32 rounded-full hover:scale-110"
+            />
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
+                (Pie)thon
+            </h1>
+            <span class="text-white font-medium">
+                Rua Rosa Bebê 123, Alphaville - SP
+            </span>
+
+            <div class="bg-pink-400 px-4 py-1 rounded-lg mt-4" id="opening-hours">
+                <span class="text-white font-medium">Ter à Dom - 7:00 às 17:00</span>
+            </div>
+        </div>
+    </header>
+    <!--HEADER-->
+
+    <h2 class="font-bold text-2xl md:text-4xl text-center mt-9 mb-6">
+        Conheça o nosso menu
+    </h2>
+
+    <!--MENU-->
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto mx-w-7xl px-2 mb-16">
+
+            <!--PRODUTO ITEM 1-->
+            <div class="flex gap-2">
+                <img 
+                src="assets/torta-maca-pq.jpg" 
+                alt="Torta de maçã"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-200">
+
+                <div>
+                    <p class="font-bold">Torta de Maçã</p>
+                    <p>Torta feita com maçãs frescas, canela e açúcar de confeiteiro. Não contêm glúten!</p>
+
+                    <div class="flex items-center gap-2 justify-between">
+                        <p class="font-bold">R$45,00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Torta de Maçã"
+                                data-price="45.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM PRODUTO ITEM 1-->
+
+            <!--PRODUTO ITEM 2-->
+            <div class="flex gap-2">
+                <img 
+                src="assets/torta-limao-pq.jpg" 
+                alt="Torta de limão"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-200">
+
+                <div>
+                    <p class="font-bold">Torta de Limão</p>
+                    <p>Torta feita com suco de limão natural, com um sabor refrescante irresistível. Não contêm glúten!</p>
+
+                    <div class="flex items-center gap-2 justify-between">
+                        <p class="font-bold">R$35,00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Torta de Limão"
+                                data-price="35.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM PRODUTO ITEM 2-->
+
+             <!--PRODUTO ITEM 3-->
+            <div class="flex gap-2">
+                <img 
+                src="assets/torta-morango-pq.jpg" 
+                alt="Torta de morango"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-200">
+
+                <div>
+                    <p class="font-bold">Torta de Morango</p>
+                    <p>Tortinha leve com creme, amendoim e morangos frescos. Não contêm glúten!</p>
+
+                    <div class="flex items-center gap-2 justify-between">
+                        <p class="font-bold">R$26,50</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Torta de Morango"
+                                data-price="26.50">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM PRODUTO ITEM 3-->
+        </main>
+
+         <div class="mx-auto max-w-7xl px-2 my-2">
+        <h2 class="font-bold text-3xl">Bebidas</h2>
+    </div>
+
+    <!--GRID BEBIDAS-->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto mx-w-7xl px-2 mb-16" id="menu">
+
+        <!--PRODUTO ITEM 1-->
+        <div class="flex gap-2 w-full">
+            <img 
+            src="assets/espresso-pq.jpg" 
+            alt="Espresso"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-200">
+
+            <div class="w-full">
+                <p class="font-bold">Espresso</p>
+                <p>Café espresso moído na hora.</p>
+
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold">R$4,50</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Espresso"
+                            data-price="4.50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--FIM PRODUTO ITEM 1-->
+
+        <!--PRODUTO ITEM 2-->
+        <div class="flex gap-2 w-full">
+            <img 
+            src="assets/latte-pq.jpg" 
+            alt="Latte"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-200">
+
+            <div class="w-full">
+                <p class="font-bold">Latte</p>
+                <p>Café moído na hora com leite cremoso.</p>
+
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold">R$6,50</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Latte"
+                            data-price="6.50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--FIM PRODUTO ITEM 2-->
+
+                <!--PRODUTO ITEM 1-->
+        <div class="flex gap-2 w-full">
+            <img 
+            src="assets/suco-pq.jpg" 
+            alt="Espresso"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-200">
+
+            <div class="w-full">
+                <p class="font-bold">Suco</p>
+                <p>Suco de polpa da sua preferência.</p>
+
+                <div class="flex items-center gap-2 justify-between">
+                    <p class="font-bold">R$10,00</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Suco"
+                            data-price="10">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--FIM PRODUTO ITEM 3-->
+
+    </div>
+    <!--FIM GRID BEBIDAS-->
+    </div>
+    <!--MENU-->
+
+
+    <!--MODAL CART-->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Carrinho de Compras</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total">0,00</span></p>
+
+            <p class="font-bold">Endereço de entrega:</p>
+            <input 
+                type="text"
+                placeholder="Digite seu endereço completo"
+                id="address"
+                class="w-full border border-gray-400 p-1 rounded my-1"
+            >
+            <p class="text-red-500 hidden" id="address-warning">Por favor, não esqueça o endereço!</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-400 text-white px-4 py-1 rounded">Finalizar pedido</button>
+            </div>
+        </div>
+    </div>
+    <!--FIM MODAL CART-->
+
+    <!--FOOTER-->
+    <footer class="bg-pink-500 w-full py-3 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="text-white gap-2" id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Ver carrinho de compras
+            <i class="fa fa-cart-plus text-white"></i>
+        </button>
+    </footer>
+    <!--FOOTER-->
+
+    <script src="script.js"></script>
+</body>
+</html>

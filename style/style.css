@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --background-image-home: url('/assets/background-50blck.png');
+}
+
+body{
+    background-color: #fff8f8;
+}
