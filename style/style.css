@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --background-image-home: url('/assets/background-50blck.png');
+  --background-image-home: url('../assets/background-50blck.png');
 }
 
 body{
